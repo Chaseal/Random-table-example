@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Random Table</title>
+</head>
+<body>
+    <button onclick="generateResult()">Roll the Dice</button>
+    <p id="result"></p>
+    <script>
+        function generateResult() {
+            const results = [
+                "A wandering merchant",
+                "A pack of wolves",
+                "A hidden treasure cache",
+                "A lost traveler",
+                "A mysterious cave",
+                "A band of robbers"
+            ];
+            const randomIndex = Math.floor(Math.random() * results.length);
+            document.getElementById("result").innerText = results[randomIndex];
+        }
+    </script>
+</body>
+</html>
